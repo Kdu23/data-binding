@@ -6,21 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-binding.component.scss']
 })
 export class DataBindingComponent {
-
+//------------------------------------------------------------------
 url:string = 'http://loiane.traning'
-
+//------------------------------------------------------------------
 cursoAngular: boolean = true;
+//------------------------------------------------------------------
 urlImagem = 'https://loremflickr.com/320/240';
-
+//------------------------------------------------------------------
 
 getValor() {
 return 1
 }
 
-
+//------------------------------------------------------------------
 getCurtirCurso() {
   return true
 }
 
+//------------------------------------------------------------------
+getValor2() {
+  return 1
+}
 
 }
