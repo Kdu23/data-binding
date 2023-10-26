@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class DataBindingComponent {
 //------------------------------------------------------------------
-url:string = 'http://loiane.traning'
+// url:string = 'http://loiane.traning'
 //------------------------------------------------------------------
-cursoAngular: boolean = true;
+// cursoAngular: boolean = true;
 //------------------------------------------------------------------
-urlImagem = 'https://loremflickr.com/320/240';
+// urlImagem = 'https://loremflickr.com/320/240';
 //------------------------------------------------------------------
-
+/*
 getValor() {
 return 1
 }
@@ -26,6 +26,49 @@ getCurtirCurso() {
 //------------------------------------------------------------------
 getValor2() {
   return 1
+}*/
+
+//------------------------------------------------------------------
+/*valorAtual: string = '';
+
+botaoClicado() {
+alert('botão clicado');
 }
+
+//----------------------------------------------------------------
+
+value = '';
+
+onEnter(value: string){
+  this.value = value;
+}
+
+
+valor = '';
+
+salvarValor(valor: string){
+   this.valor = valor;
+  }*/
+
+//---------------------------------------------------------------
+
+/*nome: string = 'abc';
+
+botaoAtivado(){
+  alert('botao Ativado')
+}
+
+botao = '';
+
+botaoEnter(botao: string) {
+this.botao = botao;
+}*/
+
+//--------------------------------------------------------------
+nomeDoCurso: string = 'Angular';
+
+
+
+
 
 }

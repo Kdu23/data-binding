@@ -1,4 +1,4 @@
-<section>
+<!--<section>
   <article>
     <h3>Interpolation / Interpolação</h3>
     <p>String renderizada com interpolação: {{ url }} </p>
@@ -15,5 +15,92 @@
     <img bind-src="urlImagem">
   </article>
 
+  <article>
+<h3>Class e Style Binding</h3>
+  </article>
 
+   <div>
+    Selecione uma classe:
+    <select #classe (change)="0">
+      <option value="alert-success">Sucesso</option>
+      <option value="alert-info">Info</option>
+      <option value="alert-warning">Alerta</option>
+      <option value="alert-danger">Erro</option>
+    </select>
+    <br><br>
+
+    <div class="alert {{classe.value}}" role="alert" >
+      Texto colorido conforme valor do combobox.
+    </div>
+
+    <div class="alert" role="alert"
+    [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+
+    <div class="alert" role="alert"
+    [class.alert-info]="classe.value == 'alert-info'">Info</div>
+
+    <div class="alert" role="alert"
+    [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
+
+
+    <div class="alert" role="alert"
+    [class.alert-danger]="classe.value == 'alert-danger'">Erro</div>
+
+    <div class="alert alert-danger" role="alert"
+     [style.display]="classe.value =='alert-danger' ? 'block' : 'none' " >Esse texto so aparece em caso de erro.</div>
+
+    </div>
+</section>-->
+<!---------------------------------------Exemplos exercicios------------------------------------------>
+<!--<section class="event-binding">
+  <article>
+
+    <h3>Event binding</h3>
+
+    <div>
+
+      <button (click)="botaoClicado()"
+      class="btn btn-primary" >
+      Click me</button>
+
+      <br><br>
+
+      <input #box (keyup.enter)="onEnter(box.value)">
+
+      <p>{{value}}</p>
+
+      <br><br>
+
+      <input #salvar (keyup.enter)="salvarValor(salvar.value)">
+
+      <p> {{valor}} </p>
+
+    </div>
+
+  </article>
+</section>-->
+<!-----------------------------------------Exemplos exercicios------------------------------------>
+<!--<section>
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="botaoAtivado()" class="btn btn-success">Me click</button>
+    </div>
+
+    <br><br>
+
+    <input #botao (keyup.enter)="botaoEnter(botao.value)">
+
+    <p> Valor: {{botao}} </p>
+
+
+  </article>
+</section>-->
+<section class="input-output-properties">
+
+  <article>
+    <h3>Input/Output properties</h3>
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+  </article>
 </section>
