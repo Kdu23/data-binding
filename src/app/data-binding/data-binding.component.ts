@@ -67,8 +67,11 @@ this.botao = botao;
 //--------------------------------------------------------------
 nomeDoCurso: string = 'Angular';
 
+valorInicial = 15;
 
-
+onMudouValor(evento: any) {
+console.log(evento.novoValor);
+}
 
 
 }
